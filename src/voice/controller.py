@@ -39,7 +39,7 @@ class VoiceController:
 
     def connect(self):
         self._client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self._client.connect((self._settings['host'], self._settings['port']))
+        self._client.connect((self._settings['voice']['host'], self._settings['voice']['port']))
                 
     def start(self):
         data = ''
@@ -51,16 +51,16 @@ class VoiceController:
                 if not whypos:
                     data = ''
                     continue
-                if float(whypos[0]['cm']) < self._settings['recognition_th']:
+                if float(whypos[0]['cm']) < self._settings['voice']['recognition_th']:
                     data = ''
                     continue
                 word = whypos[0]['word']
-                if not self.is_active and word in self._settings['activation']:
+                if not self.is_active and word in self._settings['voice']['activation']:
                     print('Activated')
                     self._active = True
                     start_time = time.time()
                 elif self.is_active:
-                    for command in self._settings['commands']:
+                    for command in self._settings['voice']['commands']:
                         if word in command['words']:
                             subprocess.run(os.path.join(COMMANDS_DIR, command['file']))
                             self._active = False
@@ -68,7 +68,7 @@ class VoiceController:
                 data = ''
             else:
                 data += self._client.recv(1024).decode()
-            if self.is_active and time.time() - start_time > self._settings['timeout']:
+            if self.is_active and time.time() - start_time > self._settings['voice']['timeout']:
                 print('Timeout')
                 self._active = False
                 
