@@ -52,6 +52,12 @@ Note:
 1. Julius should be able to recognize the words.
 2. ```your_command.sh``` must exist in ```commands``` directory.
 
+## Use environmental variables
+
+```NEOCHI_HOME``` specifies Neochi-Solver's home directory. If you specify the variable, ```settings.toml``` and ```commands``` directory should exist in the directory specified by ```NEOCHI_HOME```.
+
+If you do not specify ```NEOCHI_HOME```,  then ```settings.toml``` and ```commands``` directory for ```voice``` module should exist in the root directory of the module.
+
 # Use controller in your program
 
 ```
