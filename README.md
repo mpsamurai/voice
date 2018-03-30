@@ -20,13 +20,22 @@ Note: It is a development version.
 4. Run julius in modeule mode,
 5. Run controller module (python3 controller.py)
 
-# configure controller
+# Configure controller
 
 You can configure controller by editting settings.toml.
 
 ## Specify Julius host and port
 
 ```
-host = 'Your Julius host'
-port = Your Julius port
+host = 'yourhost.example.com'
+port = 12345
 ```
+## Add new commands
+
+```
+[[commands]]
+words = ['Word1', 'Word2', 'Word3']
+file = 'name_of_your_command.sh'
+```
+
+Note: Julius shoud be able to recognize the words.
