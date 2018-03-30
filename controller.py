@@ -65,6 +65,7 @@ class VoiceController:
             if self.is_active and time.time() - start_time > self._settings['timeout']:
                 print('Timeout')
                 self._active = False
+                
     def close(self):
         self._client.close()
     
