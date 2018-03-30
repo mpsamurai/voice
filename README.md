@@ -42,7 +42,7 @@ Note: Julius shoud be able to recognize Word1 and Word2.
 ## Add new commands
 
 ```
-[[commands]]
+[[voice.commands]]
 words = ['Word1', 'Word2', 'Word3']
 file = 'your_command.sh'
 ```
