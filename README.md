@@ -26,7 +26,7 @@ You can configure controller by editting settings.toml.
 
 ## Specify Julius host and port
 
-'''code
-host = 'localhost'
-port = 10500
+'''
+host = 'Your Julius host'
+port = Your Julius port
 '''
