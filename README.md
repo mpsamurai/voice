@@ -1,3 +1,10 @@
 # voice_controller
 
-Jullius を用いて音声認識によってコマンドを実行するモジュール。
+A module executing commands through voice.
+
+# Dependencies
+
+| Name   | Version    |
+|:-----:|:-----------:|
+| Julius | 4.4.2      |
+| Julius Dictation Kit | 4.4.2 |
