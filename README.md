@@ -50,4 +50,4 @@ file = 'your_command.sh'
 Note: 
 
 1. Julius should be able to recognize the words.
-2. your_command.sh must exists in commands directory.
+2. your_command.sh must exist in commands directory.
