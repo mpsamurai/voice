@@ -19,15 +19,18 @@ import toml
 
 __author__ = 'Junya Kaneko <junya@mpsamurai.org>'
 
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+try:
+    BASE_DIR = os.environ['NEOCHI_HOME']
+except KeyError:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SETTINGS_PATH = os.path.join(BASE_DIR, 'settings.toml')
 COMMANDS_DIR = os.path.join(BASE_DIR, 'commands')
 
 
 class VoiceController:
     
     def __init__(self):
-        self._settings = toml.load('settings.toml')
+        self._settings = toml.load(SETTINGS_PATH)
         self._active = False
 
     @property
