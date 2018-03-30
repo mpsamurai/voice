@@ -30,6 +30,13 @@ You can configure controller by editting settings.toml.
 host = 'yourhost.example.com'
 port = 12345
 ```
+
+### Change activation word
+
+activation = ['Word']
+
+Note: Julius shoud be able to recognize Word.
+
 ## Add new commands
 
 ```
