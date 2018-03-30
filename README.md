@@ -19,3 +19,14 @@ Note: It is a development version.
 3. Install Julius 4.4.2 and Julius Japanese Dictation Kit 4.4,
 4. Run julius in modeule mode,
 5. Run controller module (python3 controller.py)
+
+# configure controller
+
+You can configure controller by editting settings.toml.
+
+## Specify Julius host and port
+
+'''code
+host = 'localhost'
+port = 10500
+'''
