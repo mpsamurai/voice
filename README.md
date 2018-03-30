@@ -8,5 +8,5 @@ Note: It is a development version.
 
 | Name   | Version    |
 |:-----:|:-----------:|
-| (Julius)[https://github.com/julius-speech/julius] | 4.4.2      |
-| (Julius Dictation Kit)[https://github.com/julius-speech/dictation-kit] | 4.4.2 |
+| [Julius](https://github.com/julius-speech/julius) | 4.4.2      |
+| [Julius Dictation Kit](https://github.com/julius-speech/dictation-kit) | 4.4.2 |
