@@ -44,7 +44,10 @@ Note: Julius shoud be able to recognize Word1 and Word2.
 ```
 [[commands]]
 words = ['Word1', 'Word2', 'Word3']
-file = 'name_of_your_command.sh'
+file = 'your_command.sh'
 ```
 
-Note: Julius shoud be able to recognize the words.
+Note: 
+
+1. Julius should be able to recognize the words.
+2. your_command.sh must exists in commands directory.
