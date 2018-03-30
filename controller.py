@@ -17,6 +17,9 @@ import bs4
 import toml
 
 
+__author__ = 'Junya Kaneko <junya@mpsamurai.org>"
+
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 COMMANDS_DIR = os.path.join(BASE_DIR, 'commands')
 
