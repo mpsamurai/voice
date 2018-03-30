@@ -1,0 +1,15 @@
+host = 'localhost'
+port = 10500
+
+recognition_th = 0.99
+timeout = 5.0
+
+activation = ['へい寝落ち']
+
+[[commands]]
+words = ['オン', 'つけて']
+file = 'on.sh'
+
+[[commands]]
+words = ['オフ', 'けして']
+file = 'off.sh'
