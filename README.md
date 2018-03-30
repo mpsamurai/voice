@@ -1,4 +1,4 @@
-# voice_controller
+# voice
 
 A module executing commands through voice.
 
@@ -52,7 +52,7 @@ Note:
 1. Julius should be able to recognize the words.
 2. ```your_command.sh``` must exist in ```commands``` directory.
 
-## Use environmental variables
+## Use environment variables
 
 ```NEOCHI_HOME``` specifies Neochi-Solver's home directory. If you specify the variable, ```settings.toml``` and ```commands``` directory should exist in the directory specified by ```NEOCHI_HOME```.
 
