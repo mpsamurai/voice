@@ -48,10 +48,7 @@ class VoiceController:
             if '</RECOGOUT>\n' in data:
                 html = bs4.BeautifulSoup(data)
                 whypos = html.findAll('whypo')
-                if not whypos:
-                    data = ''
-                    continue
-                if float(whypos[0]['cm']) < self._settings['voice']['recognition_th']:
+                if not whypos or float(whypos[0]['cm']) < self._settings['voice']['recognition_th']:
                     data = ''
                     continue
                 word = whypos[0]['word']
