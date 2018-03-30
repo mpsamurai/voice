@@ -51,3 +51,16 @@ Note:
 
 1. Julius should be able to recognize the words.
 2. ```your_command.sh``` must exist in ```commands``` directory.
+
+# Use controller in your program
+
+```
+from voice.controller import VoiceController
+
+try:
+    vc = VoiceController()
+    vc.connect()
+    vc.start()
+except KeyboardInterrupt:
+    vc.close()
+```
