@@ -15,10 +15,10 @@ Note: It is a development version.
 # Setup and run
 
 1. Install python 3.6,
-2. Install python modules listed in requirements.txt (pip3 install -r requirements.txt),
+2. Install python modules listed in requirements.txt <br>```pip3 install -r requirements.txt```,
 3. Install Julius 4.4.2 and Julius Japanese Dictation Kit 4.4,
 4. Run julius in modeule mode,
-5. Run controller module (python3 controller.py)
+5. Run controller module<br>```python3 controller.py```.
 
 # Configure controller
 
