@@ -31,7 +31,7 @@ host = 'yourhost.example.com'
 port = 12345
 ```
 
-## Change activation word
+## Change activation words
 
 ```
 activation = ['Word1', 'Word2']
