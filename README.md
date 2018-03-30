@@ -33,9 +33,11 @@ port = 12345
 
 ### Change activation word
 
-activation = ['Word']
+```
+activation = ['Word1', 'Word2']
+```
 
-Note: Julius shoud be able to recognize Word.
+Note: Julius shoud be able to recognize Word1 and Word2.
 
 ## Add new commands
 
