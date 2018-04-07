@@ -5,7 +5,7 @@ port = 10500
 recognition_th = 0.99
 timeout = 5.0
 
-[[voice.activation]]
+[voice.activation]
 words = ['へい寝落ち']
 file = ''
 
