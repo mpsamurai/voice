@@ -60,9 +60,11 @@ class VoiceController:
                     data = ''
                     continue
                 word = whypos[0]['word']
-                if not self.is_active and word in self._settings['voice']['activation']:
+                if not self.is_active and word in self._settings['voice']['activation']['words']:
                     print('Activated')
                     self._active = True
+                    if self._settings['voice']['activation']['file']:
+                        subprocess.run(of.path.join(COMMANDS_DIR, command['file']))
                     start_time = time.time()
                 elif self.is_active:
                     for command in self._settings['voice']['commands']:
