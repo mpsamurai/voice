@@ -31,10 +31,12 @@ host = 'yourhost.example.com'
 port = 12345
 ```
 
-## Change activation words
+## Change activation words and commands
 
 ```
-activation = ['Word1', 'Word2']
+[voice.activation]
+words = ['Word1', 'Word2']
+file = 'your_command.sh'
 ```
 
 Note: Julius shoud be able to recognize Word1 and Word2.
